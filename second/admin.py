@@ -1,3 +1,14 @@
 from django.contrib import admin
 
-# Register your models here.
+from second.models import Lead, LeadState
+
+
+@admin.register(Lead)
+class LeadAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(LeadState)
+class LeadStateAdmin(admin.ModelAdmin):
+    pass
+
