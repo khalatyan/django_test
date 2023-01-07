@@ -12,7 +12,7 @@ class LeadForm(forms.ModelForm):
     class Meta:
         model = Lead
 
-    def state_clean(self):
-        print(self.data)
-        print(self.cleaned_data)
-        print(self.instance)
+    # def state_clean(self):
+    #     print(self.data)
+    #     print(self.cleaned_data)
+    #     print(self.instance)
